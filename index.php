@@ -1,15 +1,11 @@
 <?php
-// php Arauthmetics Operation
+// php while loop
 
-$weekend = "Saturday";
-
-switch ($weekend) {
-    case "Friday":
-        echo "Friday is Weekend";
+$count = 0;
+while ($count <= 10) {
+    $count++;
+    echo  "<h1>" . $count . "/ Hellow World</h1>";
+    if ($count == 5) {
         break;
-    case "Saturday":
-        echo "Saturday is Weekend";
-        break;
-    default:
-        echo "Enter a valid Weekday";
+    }
 }
