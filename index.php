@@ -1,22 +1,12 @@
 <?php
-// php reference argument vs value argument
+// php recursive function
 
-function wow($a)
+function display($a)
 {
-    return $a;
+    if ($a <= 5) {
+        echo $a . "<br>";
+        display($a + 1);
+    }
 }
-$a = "Hellow";
-echo wow($a);
-echo "</br>";
-function greeting(&$a)
-{
 
-    $a = 'hey';
-    return $a;
-}
-echo $a;
-echo "</br>";
-echo greeting($a);
-echo "</br>";
-
-echo $a;
+display(1);
