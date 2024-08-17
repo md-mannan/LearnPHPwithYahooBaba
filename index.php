@@ -1,12 +1,15 @@
 <?php
-// php while loop
+// php goto
 
-$count = 1;
-do {
-    echo  "<h1>" . $count . "/ Hellow World</h1>";
-    // increment the counter by 1 each iteration
-    if ($count == 1) {
-        break;  // break the loop if the counter reaches 5
+for ($i = 0; $i <= 10; $i++) {
+    echo "<h1>Hellow world<h1/>";
+    if ($i == 3) {
+        goto abc;
     }
-    $count++;
-} while ($count <= 10);
+}
+
+echo "hello world";
+echo "Hellow Mannan";
+
+abc:
+echo "This is the end";
