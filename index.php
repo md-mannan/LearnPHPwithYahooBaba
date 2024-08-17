@@ -1,11 +1,3 @@
 <?php
-// php local & global variables
-// $a = 100;
-function test()
-{
-    global $a;
-    $a = 900;
-    echo "Inside Function: " . $a . "<br>";
-}
-test();
-echo  "Outside Function: " . $a . "<br>";
+$fruits = ['Apple', 'Mango', 'Banana', 'Lime', 'Orange', 'Abocado', 'Grape', 'Lichi', 'Pinaple', 55];
+echo in_array("55", $fruits, true) ?  "Found Succesfully" : "Cannot found";
