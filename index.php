@@ -1,13 +1,13 @@
 <?php
-// php recursive function
+// php array
 
-function factorial($n)
-{
-    if ($n == 0) {
-        return 1;
-    } else {
-        return ($n *  factorial($n - 1)); //5*4=20;20*3=60;60*2=120;120*1=120;
-    }
+$arr = array('Appleses', 'Banana', 'mango', 'grapes');
+foreach ($arr as $key => $value) {
+    echo $value . "<br>"; // output: Appleses, Banana, mango, grapes
 }
-
-echo factorial(5);
+echo  "<br>";
+echo  "<br>";
+echo  "<br>";
+for ($i = 0; $i < count($arr); $i++) {
+    echo $arr[$i] . "<br>"; // output: Appleses, Banana, mango, grapes
+}
