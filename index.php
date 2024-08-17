@@ -1,15 +1,22 @@
 <?php
-// php goto
+// php reference argument vs value argument
 
-for ($i = 0; $i <= 10; $i++) {
-    echo "<h1>Hellow world<h1/>";
-    if ($i == 3) {
-        goto abc;
-    }
+function wow($a)
+{
+    return $a;
 }
+$a = "Hellow";
+echo wow($a);
+echo "</br>";
+function greeting(&$a)
+{
 
-echo "hello world";
-echo "Hellow Mannan";
+    $a = 'hey';
+    return $a;
+}
+echo $a;
+echo "</br>";
+echo greeting($a);
+echo "</br>";
 
-abc:
-echo "This is the end";
+echo $a;
